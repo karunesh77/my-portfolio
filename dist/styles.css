@@ -2,7 +2,7 @@
 
 :root {
 	--primary-clr: hsl(0, 0%, 0%);
-	--secondary-clr: hsl(0, 0%, 11%);
+	--secondary-clr: hsl(0, 0%, 15%);
 	--other-clr: hsl(0, 0%, 61%);
 	--tag-clr: hsl(0, 0%, 55%);
 	--accent-clr: hsl(160, 100%, 70%);
@@ -276,7 +276,7 @@ small {
 	padding: 0.85rem 2rem;
 	background: var(--secondary-clr);
 	margin-block-start: 1.15rem;
-	border-radius: 0.5rem;
+	border-radius: 2.5rem;
 	font-size: 1.4rem;
 }
 
@@ -416,6 +416,16 @@ small {
 .download-link {
 	color: var(--other-clr);
 	transition: color 0.45s ease-in-out;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 1px solid var(--accent-clr);
+    color: var(--accent-clr);
+    transition: all 300ms cubic-bezier(0.25, 0.32, 0.85, 0.58);
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    overflow: hidden;
 }
 
 .download-link:hover {
@@ -446,6 +456,7 @@ small {
 .about-me img {
 	align-self: end;
 	justify-self: end;
+	border-radius: 60px;
 	width: 425px;
 	box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.006),
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
