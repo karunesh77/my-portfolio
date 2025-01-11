@@ -88,6 +88,7 @@ img,
 picture {
 	max-width: 100%;
 	display: block;
+	border-radius: 10%;
 }
 
 input,
@@ -363,6 +364,7 @@ small {
 
 .hero img {
 	max-width: 375px;
+	border-radius: 50%;
 }
 
 .hero .code {
